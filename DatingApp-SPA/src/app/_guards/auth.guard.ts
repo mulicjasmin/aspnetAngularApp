@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
     private alertify: AlertifyService) {}
 
   canActivate(): boolean {
-    if(this.authService.loggedIn()) {
+    if (this.authService.loggedIn()) {
       return true;
     }
 
@@ -21,5 +21,4 @@ export class AuthGuard implements CanActivate {
     this.router.navigate(['/home']);
     return false;
   }
-  
 }
