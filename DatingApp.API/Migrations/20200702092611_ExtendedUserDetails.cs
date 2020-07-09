@@ -50,11 +50,6 @@ namespace DatingApp.API.Migrations
                 nullable: true);
 
             migrationBuilder.AddColumn<string>(
-                name: "LastActive",
-                table: "Users",
-                nullable: true);
-
-            migrationBuilder.AddColumn<string>(
                 name: "LookingFor",
                 table: "Users",
                 nullable: true);

@@ -76,9 +76,6 @@ namespace DatingApp.API.Migrations
                     b.Property<string>("KnownAs")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LastActive")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("LookingFor")
                         .HasColumnType("TEXT");
 

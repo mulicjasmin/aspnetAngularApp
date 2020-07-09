@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DatingApp.API.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200706141748_AddedPublicId")]
+    [Migration("20200709000559_AddedPublicId")]
     partial class AddedPublicId
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,7 +79,7 @@ namespace DatingApp.API.Migrations
                     b.Property<string>("KnownAs")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("LastActive")
+                    b.Property<DateTime>("LastActive")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LookingFor")
